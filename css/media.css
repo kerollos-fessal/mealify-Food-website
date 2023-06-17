@@ -1,0 +1,513 @@
+
+/* screen dimensions : 600 768 992 1200 */
+
+
+
+/* navigation bar */
+
+@media screen and (max-width: 600px)
+    {.nav-content
+   {  /* flex-wrap: wrap; */
+        align-items: center;
+        /* flex-direction: column; */
+    }
+}
+
+
+@media screen and (max-width: 600px)
+    {.nav
+   { 
+    display: flex;
+    justify-content:space-between ;
+    }
+}
+
+@media screen and (max-width: 600px)
+    {.nav-content li
+    { display: block;
+      padding-bottom: 5px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px)
+    {.nav ,.nav ul 
+    {
+        align-items: center;
+        width: 50%;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+/* home section */
+
+
+@media screen and (max-width: 992px)
+    {.home
+    { flex-wrap: wrap-reverse;
+
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 992px)
+    {.home-content 
+    { 
+        width: 100%;
+        margin: auto;
+    }
+}
+
+
+
+@media screen and (max-width: 992px)
+    {.pic
+    { 
+        width: 50%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 992px)
+    {.home-content h2
+    { 
+    font-size: 3rem;
+    }
+}
+
+
+
+
+@media screen and (max-width: 992px)
+    {.home-content p
+    { 
+    font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+/* our professional chefs */
+
+
+@media screen and (max-width: 992px)
+    {.chef-cards 
+    {
+        flex-wrap: wrap;
+        padding-left: 30px;
+        padding-right: 0px;
+}
+    }
+
+
+
+
+    @media screen and (max-width: 992px)
+    {.chef-item 
+    {
+      width: 45%;
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px)
+    {.chef-cards 
+    {
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+}
+    }
+
+
+
+
+@media screen and (max-width: 768px)
+    {.chef-item 
+    {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+}
+/* gallery masonry */
+
+
+
+
+
+
+@media screen and (max-width: 1200px)
+    { .gallery-container picture
+    {
+      width: 33%;
+    }
+}
+
+
+@media screen and (max-width: 1200px)
+    { .gallery-container picture img
+    {
+      width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px)
+    { .gallery-container
+    {
+      height: 58rem;
+    }
+}
+
+
+@media screen and (max-width: 1200px)
+    { .gallery
+    {
+      padding: 50px 70px 0 70px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 992px)
+    { .gallery-container .img1
+    {
+      order: -7;
+    }
+}
+
+
+
+@media screen and (max-width: 992px)
+    { .gallery-container .img3
+    {
+      order: -6;
+    }
+}
+
+
+
+@media screen and (max-width: 992px)
+    { .gallery-container .img4
+    {
+      order: -5;
+    }
+}
+
+
+@media screen and (max-width: 992px)
+    { .gallery-container .img7
+    {
+      order: -4;
+    }
+}
+
+
+@media screen and (max-width: 992px)
+    { .gallery-container
+    {
+      height: 96rem;
+      column-gap: 1.3rem;
+    }
+}
+
+
+@media screen and (max-width: 992px)
+    { .gallery-container picture
+    {
+      width: 50%;
+    }
+}
+
+
+
+@media screen and (max-width: 992px)
+    { .gallery
+    {
+      padding: 50px 120px 0 120px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px)
+    { .gallery-container picture
+    {
+      width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 768px)
+    { .gallery
+    {
+      padding: 50px 50px 150px 50px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px)
+    { .gallery-container
+    {
+      flex-wrap: nowrap;
+      height: auto;
+    }
+}
+
+
+
+/* contact and form region */
+
+
+@media screen and (max-width: 992px)
+    { .contact-container
+    {
+      margin: 80px 50px 0 50px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1200px)
+    { .contact-info
+    {
+      flex-direction: row;
+      width: 100%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1200px)
+    { .conts
+    {
+      flex-direction: row;
+      width: 48%;
+    }
+}
+
+
+
+@media screen and (max-width: 992px)
+    { .contact-info
+    {
+      flex-direction: row;
+      width: 100%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:992px)
+    { .conts
+    {
+      flex-direction: row;
+      width: 48%;
+    }
+}
+
+
+
+
+@media screen and (max-width:992px)
+    { .mail
+    {
+      flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px)
+    { .contact-info
+    {
+      flex-direction: column;
+      width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 768px)
+    { .conts
+    {
+      width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 992px)
+    { form button
+    {
+      width: 30%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px)
+    { form button
+    {
+      width: 40%;
+    }
+}
+
+
+
+@media screen and (max-width: 600px)
+    { form button
+    {
+      width:50%;
+    }
+}
+
+
+@media screen and (max-width: 992px)
+    { .entry
+    {
+      flex-direction: column;
+      row-gap: 0.6rem;
+    }
+}
+
+
+
+@media screen and (max-width: 992px)
+    { .entry input
+    {
+      width: 100%;
+    }
+}
+
+
+
+
+/* footer section */
+
+
+
+@media screen and (max-width: 768px)
+    { .fcontainer
+    {
+      flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 768px)
+    { .fcontainer .social, .fcontainer .subscribe, .fcontainer .info
+    {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 768px)
+    { .fcontainer .info
+    {
+      order: 3;
+    }
+}
+
+
+
+@media screen and (max-width: 768px)
+    { .fcontainer .txt-btn
+    {
+      flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 768px)
+    { .txt-btn .btn-layout, .txt-btn input  
+    {
+      width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 768px)
+    { .txt-btn .btn-layout 
+    {
+      padding-top: 7px;
+      padding-bottom: 7px;
+      margin-top: 10px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:998px)
+    { .fcontainer 
+    {
+    }
+}
+
+
+
+@media screen and (max-width:998px)
+    { .fcontainer .subscribe
+    {
+      order: 3;
+      width: 50%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1200px)
+    { .fcontainer
+    {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 40px 40px 40px 50px;
+      /* justify-content: flex-start; */
+      margin-right: 0;
+    }
+}
+
+
+
+
