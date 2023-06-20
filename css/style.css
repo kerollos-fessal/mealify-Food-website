@@ -416,20 +416,21 @@ padding-bottom: 4px;
     flex-direction: column;
     color: grey;
     background-color: rgb(236, 230, 230);
-    width: 60px;
-    height: 40%;
+    width: 40px;
+    height: 30%;
     position: absolute;
-    top: 10%;
+    top: 5%;
     right:-20%;
     border-radius: 5px;
     opacity: 0.8;
+    transition: color 200ms;
 }
 
 
 .small-icons i{
-    margin-bottom: 10px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: auto;
+    transition: color 200ms;
 }
 
 
@@ -451,9 +452,20 @@ padding-bottom: 4px;
 
 
 .layer:hover{
-    right:25%;
+    right:23%;
     opacity: 0.6;
 }
+
+
+.layer .small-icons i:hover{
+    cursor: pointer;
+    color: #000;
+}
+
+.layer .small-icons:hover{
+    color: #000;
+}
+
 
 
 
