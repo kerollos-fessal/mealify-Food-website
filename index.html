@@ -21,6 +21,27 @@
 <link rel="stylesheet" href="css/all.min.css">
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <title>Mealify</title>
+<style>
+    path {
+      fill: #e0e0e0; /* Default fill color for countries */
+      stroke: #ffffff; /* Country border color */
+      stroke-width: 1; /* Border width */
+      cursor: pointer; /* Cursor style on hover for interactivity */
+    }
+
+    path:hover {
+      fill: #a6a6a6; /* Hover state fill color for countries */
+    }
+
+    .tooltip {
+      display: none;
+      position: absolute;
+      background: #333;
+      color: #fff;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
     <!-- Nav Bar start-->
@@ -35,7 +56,7 @@
             <li><a href="#contacts" class="contact-active">Contact</a></li>
         </ul>
         
-        <div class="nav-icon" id="icon"><i class="fa-solid fa-moon fa-spin" style="color: #000000;"></i></div>
+        <div class="nav-icon" id="icon"><p><i class="fa-solid fa-moon fa-spin night-icon" style="color: #000000;"></i></p></div>
     </div>
     </nav>
     <!-- Nav Bar end -->
@@ -231,6 +252,9 @@
 <!-- contact section end -->
 
 <!-- footer section start -->
+      <div class="tooltip" id="tooltip"></div>
+</section>
+
 <footer>
     <div class="fcontainer">
         <div class="social">
@@ -289,6 +313,33 @@
     icon.onclick= function(){
         document.body.classList.toggle("dark-theme");
     }
+    var tooltip = document.getElementById("tooltip");
+
+// Add event listeners to each country path
+var countries = document.querySelectorAll("path");
+countries.forEach(function(country) {
+  country.addEventListener("mouseover", function(event) {
+    showTooltip(event, country.id);
+  });
+
+  country.addEventListener("mouseout", function() {
+    hideTooltip();
+  });
+});
+
+// Function to show tooltip
+function showTooltip(event, countryId) {
+  var countryName = document.getElementById(countryId).nextSibling.textContent;
+  tooltip.innerHTML = countryName;
+  tooltip.style.left = event.pageX + 10 + 'px';
+  tooltip.style.top = event.pageY + 10 + 'px';
+  tooltip.style.display = 'block';
+}
+
+// Function to hide tooltip
+function hideTooltip() {
+  tooltip.style.display = 'none';
+}
 </script>
 </body>
 </html>

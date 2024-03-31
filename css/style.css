@@ -38,7 +38,6 @@ html{
 }
 
 
-
 ::selection{
     background-color: #e05f5f;
     color: var(--secondary-color);
@@ -353,11 +352,13 @@ padding-bottom: 4px;
 }
 
 
+
 .nav-icon{
     font-size: 2rem;
     cursor: pointer;
-    color: var(--primary-black);
 }
+
+
 
 
 /* chef section */
@@ -546,7 +547,7 @@ padding-bottom: 4px;
     flex-wrap: wrap;
     width: 100%;
     align-items: flex-start;
-    height: 65rem;
+    height: 80rem;
     column-gap: 1.5rem;
     row-gap: 1.3rem;
 }
